@@ -5,18 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="index.css" rel="stylesheet">
-    <title>Weather</title>
+    <title>Weather App</title>
 </head>
 <body>
-    <div class="display">
-        <h1>Simple Weather</h1>
-        <h2>Find Your City</h2>
-        <input id="location_info" type="text" list="cities" placeholder="Search City">
-        <datalist id="cities">
-            <option value="Los Angeles, CA">
-            <option value="Richmond, VA">
-            <option value="Miami, FL">
-        </datalist>
+    <div class="container">
+        <div class="search">
+            <h1>Weather App</h1>
+            <h2>Find Your City</h2>
+            <form id="weather-form" onsubmit="fetchWeather()">
+                <input id="city" type="text" placeholder="Enter City" required>
+                <input id="state" type="text" placeholder="Enter State" required>
+                <button type="submit">Get Weather</button>
+            </form>
+        </div>
     </div>
+
+    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
