@@ -1,4 +1,4 @@
-# Weather App
+# Weather App (In Progress)
 # Description
 This is a simple web application where the user enters their city state to get basic weather information, such as temperature, precipitation, wind, and more using OpenWeatherMap's API.  
 
